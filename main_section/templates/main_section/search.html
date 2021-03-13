@@ -1,0 +1,72 @@
+{% extends "main_section/base.html" %}
+{% block content %}
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+
+        <div class="col-sm-3">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Email Scraper Ads -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-5747013921515016"
+                data-ad-slot="7445199382"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+
+      <div class="col-lg-6 mx-auto">
+        <h1 class="fw-light">Free Email Scraper</h1>
+        <p class="lead text-muted">Scrape email addresses found on any website for free!</p>
+
+        <a href="{% url 'emailscraper-home' %}"><button class="btn btn-primary">Scrape For Emails Again</button></a>
+
+        <br /><br />
+
+        <div>
+            <h3>Emails Found:</h3>
+                {% if emails %}
+                  {% for email in emails %}
+                      <h5>{{ email }}</h5>
+                  {% endfor %}
+                {% else %}
+                    <h5>No valid emails found</h5>
+                {% endif %}
+                <br />
+                {% if possible_emails %}
+            <h3>Possible Emails:</h3>
+                {% for possible_email in possible_emails %}
+                  <h5>{{ possible_email }}</h5>
+                {% endfor %}
+            {% endif %}
+                <h3>Link You Entered:</h3>
+                <h5>{{ link }}</h5>
+          </div>
+
+      </div>
+
+      <div class="col-sm-3">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Email Scraper Ads -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-5747013921515016"
+            data-ad-slot="7445199382"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+{% endblock content %}

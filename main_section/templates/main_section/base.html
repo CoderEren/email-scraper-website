@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    {% if page_title %}
+    <title>Free Email Scraper - {{ page_title }}</title>
+    {% else %}
+    <title>Free Email Scraper</title>
+    {% endif %}
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+    <script data-ad-client="ca-pub-5747013921515016" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/media/logo.png" sizes="180x180">
+    <link rel="icon" href="/media/logo.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/media/logo.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="https://getbootstrap.com//docs/5.0/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/media/logo.png" color="#7952b3">
+    <link rel="icon" href="/media/logo.png">
+    <meta name="theme-color" content="#7952b3">
+
+    <meta name="google-site-verification" content="gxNV0aH9MiGnxRDhRWe6p3vyiA-Qr3Kfzpgm3mnLvd4" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+  </head>
+  <body>
+    
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">Easily find the email addresses of your potential clients, customers or business partners using our free tools.</p>
+          <p class="text-muted">Made by <a target="_blank" href="https://instagram.com/erengeridonmez">Eren Geridonmez</a></p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a tagret="_blank" href="https://twitter.com/CoderEren" class="text-white">Follow on Twitter</a></li>
+            <li><a tagret="_blank" href="https://instagram.com/erengeridonmez" class="text-white">Follow on Instagram</a></li>
+            <li><a tagret="_blank" href="https://github.com/CoderEren" class="text-white">Follow on GitHub</a></li>
+            <li><a href="mailto:erengeridonmez@hotmail.com" class="text-white">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="{% url 'emailscraper-home' %}" class="navbar-brand d-flex align-items-center">
+        <strong>Free Email Scraper</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+{% block content %}
+
+{% endblock %}
+
+
+{% if page_title == "Complete Website Email Scraper" %}
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+        <h1 class="text-center">Other Services</h1>
+        <br>
+
+      <div class="row row-cols-1 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Free Email Scraper</h5>
+                <p class="card-text">Paste the link of a website and the scraper tool finds email addresses on the website.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="{% url 'emailscraper-home' %}"><button type="button" class="btn btn-md btn-primary">View</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% elif page_title == "Home" %}
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+        <h1 class="text-center">Other Services</h1>
+        <br>
+
+      <div class="row row-cols-1 g-3">
+        <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                  <h5 class="card-title">Complete Website Email Scraper</h5>
+                  <p class="card-text">Paste the link of a website and the bot finds the sitemap of the website.  
+                      Then, the bot scrapes all links on the website for email addresses.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a href="{% url 'complete-website-email-scraper' %}"><button type="button" class="btn btn-md btn-primary">View</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+{% else %}
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+        <h1 class="text-center">Our Services</h1>
+        <br>
+
+      <div class="row row-cols-1 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Free Email Scraper</h5>
+                <p class="card-text">Paste the link of a website and the scraper tool finds email addresses on the website.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="{% url 'emailscraper-home' %}"><button type="button" class="btn btn-md btn-primary">View</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                  <h5 class="card-title">Complete Website Email Scraper</h5>
+                  <p class="card-text">Paste the link of a website and the bot finds the sitemap of the website.  
+                      Then, the bot scrapes all links on the website for email addresses.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <a href="{% url 'complete-website-email-scraper' %}"><button type="button" class="btn btn-md btn-primary">View</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+  </div>
+
+{% endif %}
+
+<div class="text-center bg-light" style="padding:30px;">
+<iframe src="https://mangools.com/affil-banners/kwfinder-ad.html?title=default&theme=default&size=930x180#a601471cffeebf82a64d7debb" width="930" height="180" style="border: 0;"></iframe>
+<br>
+</div>
+
+<footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Back to top</a>
+      </p>
+      <p class="mb-1">Free Email Scraper</p>
+      <p class="text-muted">Made by <a target="_blank" href="https://instagram.com/erengeridonmez">Eren Geridonmez</a></p>
+      <p>Any requests or queries? <a href="mailto:erengeridonmez@hotmail.com">Contact Us</a></p>
+    </div>
+  </footer>
+  
+  
+  <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        
+    </body>
+  </html>

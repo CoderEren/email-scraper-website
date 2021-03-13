@@ -1,0 +1,89 @@
+{% extends "main_section/base.html" %}
+{% block content %}
+
+<main>
+
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+  
+        <div class="col-sm-3">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- Email Scraper Ads -->
+          <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-client="ca-pub-5747013921515016"
+              data-ad-slot="7445199382"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
+          <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+  
+        <div class="col-lg-6 mx-auto">
+          <h1 class="fw-light">Automatic Email Scraper Bot on Google</h1>
+          <p class="lead text-muted">Enter a Google search phrase and the bot automatically fetches the URLs of websites on the Google search results. 
+            Then, the bot scrapes those websites for email addresses.<br></p>
+          <form action="search-bot-on-google" method="GET">
+            <div class="">
+                <input placeholder="Enter Search Phrase..." name="link" type="text" class="form-control"><br>
+                <label>How Many Pages on Google To Search For:</label>
+                <select name="page" id="page">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select><br><br>
+                <button onclick="move()" type="submit" class="btn btn-primary btn-lg" id="button-addon2">Search for emails!</button>
+            </div>
+          </form><br>
+          <div style="width: 100%;background-color: #ddd;" id="myProgress">
+            <div style="width: 1%;height: 30px;background-color: #1E94FF;" id="myBar"></div>
+          </div><br>
+          <p class="small text">The email scraper automatically searches as many websites as it can for 30 seconds because of the server timeout.<br>
+            If you would like to access a complete email scaper, <a href="mailto:erengeridonmez@hotmail.com">contact us</a>.<br>
+        </div>
+  
+        <div class="col-sm-3">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- Email Scraper Ads -->
+          <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-client="ca-pub-5747013921515016"
+              data-ad-slot="7445199382"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
+          <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+  
+      </div>
+    </section>
+  
+  </main>
+
+
+  <script>
+    var i = 0;
+    function move() {
+      if (i == 0) {
+        i = 1;
+        var elem = document.getElementById("myBar");
+        var width = 1;
+        var id = setInterval(frame, 1000);
+        function frame() {
+          if (width >= 100) {
+            clearInterval(id);
+            i = 0;
+          } else {
+            width++;
+            elem.style.width = width + "%";
+          }
+        }
+      }
+    }
+    </script>
+
+
+{% endblock content %}
